@@ -16,3 +16,77 @@ Migrating to CreateGalleries (20170221141218)
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[35m (0.1ms)[0m  [1m[35mSHOW CREATE TABLE `galleries`[0m
   [1m[35m (0.3ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'galleries'[0m
+Started GET "/" for ::1 at 2017-02-21 15:26:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (133.7ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_gallery_path' for #<#<Class:0x007fd2880b4390>:0x007fd28809b840>
+Did you mean?  new_admin_gallery_path):
+    26: 
+    27: <br>
+    28: 
+    29: <%= link_to 'New Gallery', new_gallery_path %>
+  
+app/views/galleries/index.html.erb:29:in `_app_views_galleries_index_html_erb___3923463019937475322_70271101151620'
+  Rendering /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/romain/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+Started GET "/" for ::1 at 2017-02-21 15:29:51 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.4ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 1114ms (Views: 1112.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:16 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 19.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:19 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:19 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:43:20 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.3ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-21 15:44:23 +0100
+Processing by GalleriesController#index as HTML
+  Rendering galleries/index.html.erb within layouts/application
+  [1m[36mGallery Load (0.2ms)[0m  [1m[34mSELECT `galleries`.* FROM `galleries`[0m
+  Rendered galleries/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms)
+
+
